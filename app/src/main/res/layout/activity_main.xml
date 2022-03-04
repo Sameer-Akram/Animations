@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/rotate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+
+        android:background="@drawable/roundbtn"
+        android:text="ROTATE"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/slide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <Button
+        android:id="@+id/fade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/roundbtn"
+        android:text="FADE"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/slide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <Button
+        android:id="@+id/zoom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/roundbtn"
+        android:text="ZOOM OUT"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/slide"
+        app:layout_constraintTop_toBottomOf="@+id/fade"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <Button
+        android:id="@+id/slide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundbtn"
+        android:text="SLIDE"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/zoom"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/move"
+        app:layout_constraintTop_toBottomOf="@+id/zin"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <Button
+        android:id="@+id/move"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundbtn"
+        android:text="MOVE UP"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/slide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rotate"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <Button
+        android:id="@+id/zin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/roundbtn"
+        android:shadowColor="#FAFBFB"
+        android:text="BLINK"
+        android:textColorHighlight="#FAF7F7"
+        android:textColorHint="#FAF6F6"
+        android:textColorLink="#FAF6F6"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/zoom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/move"
+        app:layout_constraintTop_toBottomOf="@+id/slide"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <Button
+        android:id="@+id/slideup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        android:shadowColor="#FAFBFB"
+        android:text="SLIDE UP"
+        android:textColorHighlight="#FAF7F7"
+        android:textColorHint="#FAF6F6"
+        android:textColorLink="#FAF6F6"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/zin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/zin"
+        app:layout_constraintWidth_percent="0.3"
+        app:strokeColor="#F4F8F8" />
+
+    <Button
+        android:id="@+id/zin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/roundbtn"
+        android:shadowColor="#FAFBFB"
+        android:text="ZOOM IN"
+        android:textColorHighlight="#FAF7F7"
+        android:textColorHint="#FAF6F6"
+        android:textColorLink="#FAF6F6"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/blink2"
+        app:layout_constraintTop_toBottomOf="@+id/click"
+        app:layout_constraintWidth_percent="0.3"
+        app:strokeColor="#F4F8F8" />
+
+    <Button
+        android:id="@+id/blink2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/roundbtn"
+        android:shadowColor="#FAFBFB"
+        android:text="Bounce"
+        android:textColorHighlight="#FAF7F7"
+        android:textColorHint="#FAF6F6"
+        android:textColorLink="#FAF6F6"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/zin"
+        app:layout_constraintEnd_toStartOf="@+id/zin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+
+        android:background="@drawable/roundbtn"
+        android:text="STOP ANIMATION"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/carter_one"
+        android:includeFontPadding="true"
+        android:text="ANIMATIONS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#FDFCFC"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="348dp"
+        android:text="Click on Buttons for Animations"
+        android:textColor="#F8F5F5"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:fontFamily="@font/carter_one"
+        android:text="SAMEER"
+        android:textColor="#FDFCFC"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
